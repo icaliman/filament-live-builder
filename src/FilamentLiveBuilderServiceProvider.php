@@ -1,13 +1,13 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace XliteDev\FilamentLiveBuilder;
 
 use Filament\PluginServiceProvider;
 use Spatie\LaravelPackageTools\Package;
 
-class SkeletonServiceProvider extends PluginServiceProvider
+class FilamentLiveBuilderServiceProvider extends PluginServiceProvider
 {
-    public static string $name = 'skeleton';
+    public static string $name = 'live-builder';
 
     protected array $resources = [
         // CustomResource::class,
@@ -22,15 +22,15 @@ class SkeletonServiceProvider extends PluginServiceProvider
     ];
 
     protected array $styles = [
-        'plugin-skeleton' => __DIR__.'/../resources/dist/skeleton.css',
+        'plugin-live-builder' => __DIR__.'/../resources/dist/live-builder.css',
     ];
 
     protected array $scripts = [
-        'plugin-skeleton' => __DIR__.'/../resources/dist/skeleton.js',
+        'plugin-live-builder' => __DIR__.'/../resources/dist/live-builder.js',
     ];
 
     // protected array $beforeCoreScripts = [
-    //     'plugin-skeleton' => __DIR__ . '/../resources/dist/skeleton.js',
+    //     'plugin-live-builder' => __DIR__ . '/../resources/dist/live-builder.js',
     // ];
 
     public function configurePackage(Package $package): void
